@@ -1,0 +1,32 @@
+C:\Users\ADMIN>nmap -sS 127.0.0.1
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-03-23 19:42 +0530
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0015s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+1521/tcp open  oracle
+3306/tcp open  mysql
+6881/tcp open  bittorrent-tracker
+8080/tcp open  http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.50 seconds
+
+
+C:\Users\ADMIN>nmap -sV 127.0.0.1
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-03-23 19:43 +0530
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0014s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+1521/tcp open  oracle-tns    Oracle TNS Listener 10.2.0.1.0 (for 32-bit Windows)
+3306/tcp open  mysql         MySQL 8.0.42
+6881/tcp open  tcpwrapped
+8080/tcp open  http          Oracle XML DB Enterprise Edition httpd
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.06 seconds
